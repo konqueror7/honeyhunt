@@ -3,44 +3,6 @@ import { Entity } from './Entity.js'
 
 const commentForm = document.forms.comment_form
 const commentList = document.querySelector('.comments-list')
-const inputs = document.getElementsByTagName('input')
-const commentArea = document.querySelector('textarea')
-const submitButton = document.querySelector('.comment-submit')
-
-commentArea.pattern = '[А-Яа-яA-Za-z0-9 -]{4,}'
-commentArea.placeholder += ' (не менее 4-х букв или цифр с пробелом)';
-submitButton.addEventListener('click', function (event) {
-  if (commentArea.validity.patternMismatch) {
-    commentArea.setCustomValidity('Введите имя не менее 4-х букв или цифр с пробелом!')
-  } else {
-    commentArea.setCustomValidity('')
-  }
-})
-
-for (let input of inputs) {
-  if (input.getAttribute('name') === 'name') {
-    input.pattern = '[А-Яа-яA-Za-z0-9 -]{4,}'
-    submitButton.addEventListener('click', function (event) {
-      if (input.validity.patternMismatch) {
-        input.setCustomValidity('Введите имя не менее 4-х букв или цифр с пробелом!')
-      } else {
-        input.setCustomValidity('')
-      }
-    })
-  }
-
-  if (input.getAttribute('name') === 'email') {
-    input.pattern = '[a-z0-9._%+\-]+@[a-z0-9\-]{1,}\.[a-z]{2,}$'
-    submitButton.addEventListener('click', function (event) {
-      if (input.validity.patternMismatch) {
-        input.setCustomValidity('Введите адрес вида address@service.ru')
-      }
-      else {
-        input.setCustomValidity('')
-      }
-    });
-  }
-}
 
 Entity.list(
   {},

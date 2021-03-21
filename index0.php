@@ -19,6 +19,7 @@
     <link href="fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="fonts/fontawesome/css/brands.css" rel="stylesheet">
     <link href="fonts/fontawesome/css/solid.css" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
 
@@ -35,7 +36,7 @@
         <section id="add-comment">
           <div class="container">
 
-            <form id="add-comment-form" name="comment_form" class="" action="" method="post">
+            <form id="add-comment-form" class="" action="" method="post">
               <div class="row add-comment-input-block">
                 <div class="col-5 add-comment-left-side">
                   <div class="row form-group mb-0">
@@ -151,7 +152,6 @@
       </div>
     </footer>
 
-    <script type="module" src="js/script.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
