@@ -281,4 +281,7 @@ footer .row,
 
 .social-nets {
   width: 143px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: content-box;
 }

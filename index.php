@@ -40,17 +40,17 @@
                 <div class="col-5 add-comment-left-side">
                   <div class="row form-group mb-0">
                     <label for="name">Имя</label>
-                    <input class="form-control" id="name" autocomplete="off" type="text" name="name" value="" required>
+                    <input class="form-control" id="name" autocomplete="off" type="text" name="name" value="" required title="Введите свое имя">
                   </div>
                   <div class="row form-group mb-0">
                     <label for="email">E-Mail</label>
-                    <input class="form-control" id="email" autocomplete="off" type="email" name="email" value="" required>
+                    <input class="form-control" id="email" autocomplete="off" type="email" name="email" value="" required title="Укажите адрес электронной почты">
                   </div>
                 </div>
                 <div class="offset-1 col-6 add-comment-right-side">
                   <div class="form-group">
                     <label for="comment">Комментарий</label>
-                    <textarea class="form-control comment-textarea" id="comment" name="comment" required></textarea>
+                    <textarea class="form-control comment-textarea" id="comment" name="comment" required title="Оставьте сообщение"></textarea>
                   </div>
                 </div>
               </div>

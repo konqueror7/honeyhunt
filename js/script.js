@@ -8,10 +8,10 @@ const commentArea = document.querySelector('textarea')
 const submitButton = document.querySelector('.comment-submit')
 
 commentArea.pattern = '[А-Яа-яA-Za-z0-9 -]{4,}'
-commentArea.placeholder += ' (не менее 4-х букв или цифр с пробелом)';
 submitButton.addEventListener('click', function (event) {
-  if (commentArea.validity.patternMismatch) {
-    commentArea.setCustomValidity('Введите имя не менее 4-х букв или цифр с пробелом!')
+  console.log(commentArea.validationMessage);
+  if (commentArea.value.length < 4) {
+    commentArea.setCustomValidity('Введите не менее 4-х символов!')
   } else {
     commentArea.setCustomValidity('')
   }
@@ -34,8 +34,7 @@ for (let input of inputs) {
     submitButton.addEventListener('click', function (event) {
       if (input.validity.patternMismatch) {
         input.setCustomValidity('Введите адрес вида address@service.ru')
-      }
-      else {
+      } else {
         input.setCustomValidity('')
       }
     });
