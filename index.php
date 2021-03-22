@@ -25,7 +25,7 @@
     <header>
       <div class="container">
         <div class="row">
-          <a href="/" class="col-sm-4"><img class="img-fluid logo" src="image/honeyhunt-logo.png" alt="Honey Hunters"></a>
+          <a href="/" class="col-sm-12 col-lg-4"><img class="img-fluid logo" src="image/honeyhunt-logo.png" alt="Honey Hunters"></a>
 
         </div>
       </div>
@@ -37,18 +37,18 @@
 
             <form id="add-comment-form" name="comment_form" class="" action="" method="post">
               <div class="row add-comment-input-block">
-                <div class="col-5 add-comment-left-side">
-                  <div class="row form-group mb-0">
+                <div class="col-lg-5 col-sm-12 add-comment-left-side">
+                  <div class="form-group mb-0 d-flex flex-column justify-content-between">
                     <label for="name">Имя</label>
                     <input class="form-control" id="name" autocomplete="off" type="text" name="name" value="" required title="Введите свое имя">
                   </div>
-                  <div class="row form-group mb-0">
+                  <div class="form-group mb-0 d-flex flex-column justify-content-between">
                     <label for="email">E-Mail</label>
                     <input class="form-control" id="email" autocomplete="off" type="email" name="email" value="" required title="Укажите адрес электронной почты">
                   </div>
                 </div>
-                <div class="offset-1 col-6 add-comment-right-side">
-                  <div class="form-group">
+                <div class="offset-lg-1 col-lg-6 col-sm-12 add-comment-right-side">
+                  <div class="form-group d-flex flex-column justify-content-between">
                     <label for="comment">Комментарий</label>
                     <textarea class="form-control comment-textarea" id="comment" name="comment" required title="Оставьте сообщение"></textarea>
                   </div>
@@ -72,66 +72,6 @@
             </div>
             <div class="comments-list row d-flex justify-content-start text-center">
 
-                <div class="comments-item">
-                  <div class="comments-item-author d-flex align-items-center justify-content-center">
-                    Вася
-                  </div>
-                  <div class="comments-item-email">
-                    vasya@mail.ru
-                  </div>
-                  <div class="comments-item-text">
-                    Сообщение от Василия Пупкина.
-                  </div>
-                </div>
-
-                <div class="comments-item">
-                  <div class="comments-item-author d-flex align-items-center justify-content-center">
-                    Маруся
-                  </div>
-                  <div class="comments-item-email">
-                    marysia@mail.ru
-                  </div>
-                  <div class="comments-item-text">
-                    Всем привет, я Маруся
-                  </div>
-                </div>
-
-                <div class="comments-item">
-                  <div class="comments-item-author d-flex align-items-center justify-content-center">
-                    Вася
-                  </div>
-                  <div class="comments-item-email">
-                    vasya@mail.ru
-                  </div>
-                  <div class="comments-item-text">
-                    Сообщение от Василия Пупкина.
-                  </div>
-                </div>
-
-                <div class="comments-item">
-                  <div class="comments-item-author d-flex align-items-center justify-content-center">
-                    Маруся
-                  </div>
-                  <div class="comments-item-email">
-                    marysia@mail.ru
-                  </div>
-                  <div class="comments-item-text">
-                    Всем привет, я Маруся
-                  </div>
-                </div>
-
-                <div class="comments-item">
-                  <div class="comments-item-author d-flex align-items-center justify-content-center">
-                    Вася
-                  </div>
-                  <div class="comments-item-email">
-                    vasya@mail.ru
-                  </div>
-                  <div class="comments-item-text">
-                    Сообщение от Василия Пупкина.
-                  </div>
-                </div>
-
             </div>
           </div>
         </section>
@@ -141,10 +81,14 @@
     <footer>
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <img class="img-fluid col-lg-3 footer-logo" src="image/honeyhunt-logo.png" alt="Honey Hunters">
-          <div class="social-nets d-flex justify-content-between">
-            <a href="https://vk.com/" class="socnet-button-link d-flex align-items-center justify-content-center"><i class="fab fa-vk"> <span class="socnet-link-text">VK</span> </i></a>
-            <a href="https://www.facebook.com/" class="socnet-button-link d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"> <span class="socnet-link-text">facebook</span> </i></a>
+          <div class="col-xs-4 footer-logo-block">
+            <img class="img-fluid  footer-logo" src="image/honeyhunt-logo.png" alt="Honey Hunters">
+          </div>
+          <div class="col-xs-6 social-nets-block">
+            <div class="social-nets d-flex justify-content-between">
+              <a href="https://vk.com/" class="socnet-button-link d-flex align-items-center justify-content-center"><i class="fab fa-vk"> <span class="socnet-link-text">VK</span> </i></a>
+              <a href="https://www.facebook.com/" class="socnet-button-link d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"> <span class="socnet-link-text">facebook</span> </i></a>
+            </div>
           </div>
 
         </div>
