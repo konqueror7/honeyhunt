@@ -55,7 +55,7 @@
                 </div>
               </div>
               <div class="row d-flex justify-content-end">
-                <button class="btn btn-danger comment-submit" type="submit" name="submit">Записать</button>
+                <button form="add-comment-form" class="btn btn-danger comment-submit" type="submit" name="submit">Записать</button>
               </div>
             </form>
 
