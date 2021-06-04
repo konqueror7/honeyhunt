@@ -40,3 +40,5 @@ MariaDB [(none)]> source /path/to/file/on/server/unload-honeyhunt-bd.sql
 * jQuery;
 * Popper;
 * Bootstrap 4.0;
+
+![Скриншот](screenshot.png)
